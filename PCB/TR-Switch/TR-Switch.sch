@@ -150,7 +150,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 4200 5400 4300
 $Comp
-L TR-Switch-v1-rescue:GALI-74-RF_Amplifier U5
+L TR-Switch-rescue:GALI-74-RF_Amplifier-TR-Switch-v1-rescue U5
 U 1 1 5F0C5BD5
 P 7400 3900
 F 0 "U5" H 7400 4267 50  0000 C CNN
@@ -161,7 +161,7 @@ F 3 "" H 7400 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TR-Switch-v1-rescue:GALI-74-RF_Amplifier U6
+L TR-Switch-rescue:GALI-74-RF_Amplifier-TR-Switch-v1-rescue U6
 U 1 1 5F0C9C89
 P 8900 3900
 F 0 "U6" H 8900 4267 50  0000 C CNN
@@ -883,7 +883,7 @@ $EndComp
 Text Notes 4550 4250 0    50   ~ 0
 Values are for 17MHz
 $Comp
-L TR-Switch-v1-rescue:SCLF-X-RF_Filter U7
+L TR-Switch-rescue:SCLF-X-RF_Filter-TR-Switch-v1-rescue U7
 U 1 1 5F1D807A
 P 10450 3900
 F 0 "U7" H 10450 4317 50  0000 C CNN

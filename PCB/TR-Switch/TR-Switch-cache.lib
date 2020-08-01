@@ -257,11 +257,11 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# TR-Switch-v1-rescue_GALI-74-RF_Amplifier
+# TR-Switch-rescue_GALI-74-RF_Amplifier-TR-Switch-v1-rescue
 #
-DEF TR-Switch-v1-rescue_GALI-74-RF_Amplifier U 0 20 Y Y 1 F N
+DEF TR-Switch-rescue_GALI-74-RF_Amplifier-TR-Switch-v1-rescue U 0 20 Y Y 1 F N
 F0 "U" -50 300 50 H V C CNN
-F1 "TR-Switch-v1-rescue_GALI-74-RF_Amplifier" 100 200 50 H V C CNN
+F1 "TR-Switch-rescue_GALI-74-RF_Amplifier-TR-Switch-v1-rescue" 100 200 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-89-3" 50 400 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -275,11 +275,11 @@ X ~ 3 300 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# TR-Switch-v1-rescue_SCLF-X-RF_Filter
+# TR-Switch-rescue_SCLF-X-RF_Filter-TR-Switch-v1-rescue
 #
-DEF TR-Switch-v1-rescue_SCLF-X-RF_Filter U 0 20 Y Y 1 F N
+DEF TR-Switch-rescue_SCLF-X-RF_Filter-TR-Switch-v1-rescue U 0 20 Y Y 1 F N
 F0 "U" -250 300 50 H V C CNN
-F1 "TR-Switch-v1-rescue_SCLF-X-RF_Filter" 250 300 50 H V C CNN
+F1 "TR-Switch-rescue_SCLF-X-RF_Filter-TR-Switch-v1-rescue" 250 300 50 H V C CNN
 F2 "RF_Mini-Circuits:Mini-Circuits_GP731_LandPatternPL-176" 0 -450 50 H I C CNN
 F3 "" 0 400 50 H I C CNN
 $FPLIST
