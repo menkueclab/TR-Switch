@@ -1059,11 +1059,11 @@ F 3 "~" H 9400 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 2500 9400 2800
+	9400 2500 9400 2750
 Wire Wire Line
 	9400 3100 9400 3200
 Wire Wire Line
-	7900 2500 7900 2800
+	7900 2500 7900 2750
 Wire Wire Line
 	7900 3100 7900 3200
 $Comp
@@ -1413,4 +1413,50 @@ F 3 "" H 4750 1500 50  0001 C CNN
 	1    4750 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R21
+U 1 1 5F2B32EB
+P 7550 3100
+F 0 "R21" H 7620 3146 50  0000 L CNN
+F 1 "90 1W" H 7620 3055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7480 3100 50  0001 C CNN
+F 3 "~" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3250 7550 3500
+Wire Wire Line
+	7550 3500 7900 3500
+Connection ~ 7900 3500
+Wire Wire Line
+	7550 2950 7550 2750
+Wire Wire Line
+	7550 2750 7900 2750
+Connection ~ 7900 2750
+Wire Wire Line
+	7900 2750 7900 2800
+$Comp
+L Device:R R22
+U 1 1 5F2C68EC
+P 9050 3100
+F 0 "R22" H 9120 3146 50  0000 L CNN
+F 1 "90 1W" H 9120 3055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8980 3100 50  0001 C CNN
+F 3 "~" H 9050 3100 50  0001 C CNN
+	1    9050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2950 9050 2750
+Wire Wire Line
+	9050 2750 9400 2750
+Connection ~ 9400 2750
+Wire Wire Line
+	9400 2750 9400 2800
+Wire Wire Line
+	9050 3250 9050 3500
+Wire Wire Line
+	9050 3500 9400 3500
+Connection ~ 9400 3500
 $EndSCHEMATC
