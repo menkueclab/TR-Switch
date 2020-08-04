@@ -958,17 +958,6 @@ Wire Wire Line
 	3750 2900 3750 3600
 Wire Wire Line
 	3000 2650 3000 2900
-$Comp
-L Device:R R6
-U 1 1 5F0FDD00
-P 2850 1900
-F 0 "R6" V 3000 1850 50  0000 L CNN
-F 1 "x" V 2920 1855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 1900 50  0001 C CNN
-F 3 "~" H 2850 1900 50  0001 C CNN
-	1    2850 1900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2850 1750 3000 1750
 Connection ~ 3000 1750
@@ -1507,4 +1496,36 @@ Wire Wire Line
 	6700 5150 6700 5200
 Text Notes 6850 4650 0    50   ~ 0
 low ESL types\nSRF should be around 17 MHz
+$Comp
+L Device:R R6
+U 1 1 5F2A435A
+P 2650 2100
+F 0 "R6" H 2500 2000 50  0000 L CNN
+F 1 "x" H 2550 2050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 2100 50  0001 C CNN
+F 3 "~" H 2650 2100 50  0001 C CNN
+	1    2650 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5F2AAEDA
+P 2650 1750
+F 0 "C27" H 2800 1800 50  0000 C CNN
+F 1 "x" H 2800 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 1600 50  0001 C CNN
+F 3 "~" H 2650 1750 50  0001 C CNN
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1750 2850 1600
+Wire Wire Line
+	2850 1600 2650 1600
+Wire Wire Line
+	2650 1900 2650 1950
+Wire Wire Line
+	2650 2250 2850 2250
+Wire Wire Line
+	2850 2250 2850 2050
 $EndSCHEMATC
