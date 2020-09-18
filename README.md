@@ -4,6 +4,8 @@ T/R Switch with LNA for low-field MRI. Design by Benjamin Menkuec.
 ### Contributing
 
   * Jason Stockmann
+  * Thomas Witzel
+  * Don 
   * Lincoln Craven-Brightman
   * Odin Holmes
 
