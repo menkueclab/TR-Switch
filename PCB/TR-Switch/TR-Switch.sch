@@ -1853,4 +1853,6 @@ Wire Wire Line
 Connection ~ 2700 2250
 Wire Wire Line
 	2700 2250 2700 2650
+Text Notes 800  7250 0    50   ~ 0
+Heatsinks:\nhttps://www.mouser.de/ProductDetail/Advanced-Thermal-Solutions/ATS-PCB1001?qs=qSfuJ%252Bfl%2Fd5x%252BWvNKdBR%2FA%3D%3D
 $EndSCHEMATC
