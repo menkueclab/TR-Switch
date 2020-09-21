@@ -41,7 +41,7 @@ U 1 1 5F0B8BD0
 P 3750 3750
 F 0 "C9" V 4002 3750 50  0000 C CNN
 F 1 "0.1uF" V 3911 3750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3788 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3788 3600 50  0001 C CNN
 F 3 "~" H 3750 3750 50  0001 C CNN
 	1    3750 3750
 	-1   0    0    1   
@@ -52,7 +52,7 @@ U 1 1 5F0B900F
 P 2250 3750
 F 0 "C3" H 2100 3700 50  0000 C CNN
 F 1 "0.1uF" H 2050 3800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2288 3600 50  0001 C CNN
 F 3 "~" H 2250 3750 50  0001 C CNN
 	1    2250 3750
 	-1   0    0    1   
@@ -417,8 +417,6 @@ $EndComp
 Wire Wire Line
 	3250 5100 3250 5400
 Connection ~ 3250 5400
-Wire Wire Line
-	3250 5400 3550 5400
 $Comp
 L Device:C C4
 U 1 1 5F10B804
@@ -430,19 +428,6 @@ F 3 "~" H 3150 5650 50  0001 C CNN
 	1    3150 5650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C7
-U 1 1 5F10C9F9
-P 3550 5650
-F 0 "C7" H 3700 5700 50  0000 C CNN
-F 1 "10uF" H 3700 5600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3588 5500 50  0001 C CNN
-F 3 "~" H 3550 5650 50  0001 C CNN
-	1    3550 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 5500 3550 5400
 Wire Wire Line
 	3150 5500 3150 5400
 Connection ~ 3150 5400
@@ -459,21 +444,8 @@ F 3 "" H 3150 5850 50  0001 C CNN
 	1    3150 5850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5F11138E
-P 3550 5850
-F 0 "#PWR012" H 3550 5600 50  0001 C CNN
-F 1 "GND" H 3555 5677 50  0000 C CNN
-F 2 "" H 3550 5850 50  0001 C CNN
-F 3 "" H 3550 5850 50  0001 C CNN
-	1    3550 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 5800 3150 5850
-Wire Wire Line
-	3550 5800 3550 5850
 $Comp
 L Device:C C1
 U 1 1 5F116B86
@@ -745,10 +717,7 @@ $EndComp
 Wire Wire Line
 	3950 5800 3950 5850
 Wire Wire Line
-	3550 5400 3950 5400
-Wire Wire Line
 	3950 5400 3950 5500
-Connection ~ 3550 5400
 $Comp
 L power:GND #PWR013
 U 1 1 5F1BE0C7
@@ -1076,35 +1045,6 @@ F 3 "~" H 10600 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C20
-U 1 1 5F2F9D38
-P 4300 5650
-F 0 "C20" H 4450 5700 50  0000 C CNN
-F 1 "10uF" H 4450 5600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4338 5500 50  0001 C CNN
-F 3 "~" H 4300 5650 50  0001 C CNN
-	1    4300 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 5800 4300 5850
-Wire Wire Line
-	4300 5400 4300 5500
-$Comp
-L power:GND #PWR029
-U 1 1 5F2F9D40
-P 4300 5850
-F 0 "#PWR029" H 4300 5600 50  0001 C CNN
-F 1 "GND" H 4305 5677 50  0000 C CNN
-F 2 "" H 4300 5850 50  0001 C CNN
-F 3 "" H 4300 5850 50  0001 C CNN
-	1    4300 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 5400 4300 5400
-Connection ~ 3950 5400
-$Comp
 L Device:C C21
 U 1 1 5F121A12
 P 6700 5350
@@ -1367,9 +1307,9 @@ L Device:D_Schottky D1
 U 1 1 5F6AD907
 P 1900 5400
 F 0 "D1" H 1900 5184 50  0000 C CNN
-F 1 "D_Schottky" H 1900 5275 50  0000 C CNN
+F 1 "BAT54GWX" H 1900 5275 50  0000 C CNN
 F 2 "" H 1900 5400 50  0001 C CNN
-F 3 "~" H 1900 5400 50  0001 C CNN
+F 3 "https://www.mouser.de/ProductDetail/Nexperia/BAT54GWX?qs=EO%252B2iqeaG03VwoGE7RbvqQ%3D%3D" H 1900 5400 50  0001 C CNN
 	1    1900 5400
 	-1   0    0    1   
 $EndComp
@@ -1855,4 +1795,6 @@ Wire Wire Line
 	2700 2250 2700 2650
 Text Notes 800  7250 0    50   ~ 0
 Heatsinks:\nhttps://www.mouser.de/ProductDetail/Advanced-Thermal-Solutions/ATS-PCB1001?qs=qSfuJ%252Bfl%2Fd5x%252BWvNKdBR%2FA%3D%3D
+Wire Wire Line
+	3250 5400 3950 5400
 $EndSCHEMATC
