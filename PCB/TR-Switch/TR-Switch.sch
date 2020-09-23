@@ -369,7 +369,7 @@ L Connector_Generic:Conn_01x02 J2
 U 1 1 5F101E61
 P 800 5500
 F 0 "J2" H 718 5175 50  0000 C CNN
-F 1 "13V Power In" H 718 5266 50  0000 C CNN
+F 1 "Power In" H 718 5266 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 5500 50  0001 C CNN
 F 3 "~" H 800 5500 50  0001 C CNN
 	1    800  5500
@@ -474,17 +474,6 @@ F 3 "" H 2200 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 5800 2200 5850
-$Comp
-L power:+12V #PWR016
-U 1 1 5F11C4A2
-P 5200 5050
-F 0 "#PWR016" H 5200 4900 50  0001 C CNN
-F 1 "+12V" H 5215 5223 50  0000 C CNN
-F 2 "" H 5200 5050 50  0001 C CNN
-F 3 "" H 5200 5050 50  0001 C CNN
-	1    5200 5050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5F11D99D
@@ -597,8 +586,6 @@ F 3 "" H 7150 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7150 5550 7150 5650
-Wire Wire Line
-	5200 5050 5200 5100
 Wire Wire Line
 	5200 6250 5200 6200
 Wire Wire Line
@@ -1055,17 +1042,6 @@ F 3 "~" H 6700 5350 50  0001 C CNN
 	1    6700 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR030
-U 1 1 5F1274B8
-P 6700 5150
-F 0 "#PWR030" H 6700 5000 50  0001 C CNN
-F 1 "+12V" H 6715 5323 50  0000 C CNN
-F 2 "" H 6700 5150 50  0001 C CNN
-F 3 "" H 6700 5150 50  0001 C CNN
-	1    6700 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 5500 6700 5650
 Connection ~ 6700 5650
@@ -1229,8 +1205,6 @@ F 3 "" H 6350 4700 50  0001 C CNN
 	1    6350 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 5150 6700 5200
 Text Notes 4600 3200 0    50   ~ 0
 C25, C26 should be low ESL types\nSRF should be around 17 MHz
 $Comp
@@ -1284,7 +1258,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3150 2750 3150
 Wire Wire Line
-	2750 3150 2750 3600
+	2750 3150 2750 3300
 Connection ~ 3450 2900
 Wire Wire Line
 	3050 3750 3050 3900
@@ -1308,7 +1282,7 @@ U 1 1 5F6AD907
 P 1900 5400
 F 0 "D1" H 1900 5184 50  0000 C CNN
 F 1 "BAT54GWX" H 1900 5275 50  0000 C CNN
-F 2 "" H 1900 5400 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1900 5400 50  0001 C CNN
 F 3 "https://www.mouser.de/ProductDetail/Nexperia/BAT54GWX?qs=EO%252B2iqeaG03VwoGE7RbvqQ%3D%3D" H 1900 5400 50  0001 C CNN
 	1    1900 5400
 	-1   0    0    1   
@@ -1797,4 +1771,51 @@ Text Notes 800  7250 0    50   ~ 0
 Heatsinks:\nhttps://www.mouser.de/ProductDetail/Advanced-Thermal-Solutions/ATS-PCB1001?qs=qSfuJ%252Bfl%2Fd5x%252BWvNKdBR%2FA%3D%3D
 Wire Wire Line
 	3250 5400 3950 5400
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5F6C2D87
+P 2950 3300
+F 0 "J6" H 3030 3292 50  0000 L CNN
+F 1 "Conn_01x02" H 3030 3201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2950 3300 50  0001 C CNN
+F 3 "~" H 2950 3300 50  0001 C CNN
+	1    2950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3400 2750 3600
+Text Label 2050 5400 0    50   ~ 0
+PWR_IN
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5F6CF944
+P 4500 4850
+F 0 "J7" H 4418 4525 50  0000 C CNN
+F 1 "Conn_01x03" H 4418 4616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4500 4850 50  0001 C CNN
+F 3 "~" H 4500 4850 50  0001 C CNN
+	1    4500 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 4850 4700 4850
+Wire Wire Line
+	5200 4850 5200 5100
+Wire Wire Line
+	4700 4950 4700 5400
+Wire Wire Line
+	4700 5400 3950 5400
+Connection ~ 3950 5400
+Wire Wire Line
+	4700 4750 5200 4750
+Text Label 4750 4750 0    50   ~ 0
+PWR_IN
+Wire Wire Line
+	6700 5200 6700 4950
+Wire Wire Line
+	6700 4950 7150 4950
+Text Label 6800 4950 0    50   ~ 0
+PWR
+Text Label 4750 4850 0    50   ~ 0
+PWR
 $EndSCHEMATC
