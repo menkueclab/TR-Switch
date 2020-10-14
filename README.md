@@ -1,5 +1,7 @@
 # TR-Switch
-T/R Switch with LNA for low-field MRI. Design by Benjamin Menkuec.
+T/R Switch with LNA for low-field MRI.
+
+[Read more](https://github.com/menkueclab/TR-Switch/wiki)
 
 ### Contributing
 
