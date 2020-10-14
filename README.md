@@ -9,6 +9,7 @@ T/R Switch with LNA for low-field MRI.
   * Thomas Witzel
   * Don 
   * Lincoln Craven-Brightman
+  * Marcus Prier
   * Odin Holmes
 
 ### References
