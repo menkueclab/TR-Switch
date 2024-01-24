@@ -1,11 +1,35 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# GALI-74-RF_Amplifier-TR-Switch-v1-rescue
+# BAV99-Diode
 #
-DEF GALI-74-RF_Amplifier-TR-Switch-v1-rescue U 0 20 Y Y 1 F N
+DEF BAV99-Diode D 0 20 Y N 1 F N
+F0 "D" 0 200 50 H V C CNN
+F1 "BAV99-Diode" 0 100 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 0 -500 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+C 0 0 10 1 1 0 F
+P 2 0 1 0 -200 0 200 0 N
+P 2 1 1 0 0 0 0 -100 N
+P 3 1 1 8 -50 -50 -50 50 -50 50 N
+P 3 1 1 8 150 50 150 -50 150 -50 N
+P 6 1 1 8 -150 50 -50 0 -150 -50 -150 50 -150 50 -150 50 N
+P 6 1 1 8 50 50 150 0 50 -50 50 50 50 50 50 50 N
+X K 1 -300 0 100 R 50 50 1 1 P
+X A 2 300 0 100 L 50 50 1 1 P
+X K 3 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GALI-74-RF_Amplifier-TR-Switch-v1-rescue-TR-Switch-rescue
+#
+DEF GALI-74-RF_Amplifier-TR-Switch-v1-rescue-TR-Switch-rescue U 0 20 Y Y 1 F N
 F0 "U" -50 300 50 H V C CNN
-F1 "GALI-74-RF_Amplifier-TR-Switch-v1-rescue" 100 200 50 H V C CNN
+F1 "GALI-74-RF_Amplifier-TR-Switch-v1-rescue-TR-Switch-rescue" 100 200 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-89-3" 50 400 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +43,11 @@ X ~ 3 300 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# SCLF-X-RF_Filter-TR-Switch-v1-rescue
+# SCLF-X-RF_Filter-TR-Switch-v1-rescue-TR-Switch-rescue
 #
-DEF SCLF-X-RF_Filter-TR-Switch-v1-rescue U 0 20 Y Y 1 F N
+DEF SCLF-X-RF_Filter-TR-Switch-v1-rescue-TR-Switch-rescue U 0 20 Y Y 1 F N
 F0 "U" -250 300 50 H V C CNN
-F1 "SCLF-X-RF_Filter-TR-Switch-v1-rescue" 250 300 50 H V C CNN
+F1 "SCLF-X-RF_Filter-TR-Switch-v1-rescue-TR-Switch-rescue" 250 300 50 H V C CNN
 F2 "RF_Mini-Circuits:Mini-Circuits_GP731_LandPatternPL-176" 0 -450 50 H I C CNN
 F3 "" 0 400 50 H I C CNN
 $FPLIST
